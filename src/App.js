@@ -1,25 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Input from './components/Input';
+import { ForecastProvider } from './components/ForecastContext';
+import Forecast from './components/Forecast';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<h1>WEATHER FORECAST</h1>
+
+			<ForecastProvider>
+				<Input />
+				<Forecast />
+			</ForecastProvider>
+		</div>
+	);
 }
 
 export default App;
