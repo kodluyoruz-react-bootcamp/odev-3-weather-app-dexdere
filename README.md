@@ -1,5 +1,5 @@
 # Netlify Link
-https://agitated-sammet-facd45.netlify.app/
+https://weatherapp-kodluyoruz.netlify.app/
 
 # Getting Started with Create React App
 
